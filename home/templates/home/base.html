@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- !Links Start -->
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'home/styles/owl.carousel.min.css' %}"
+    />
     <!-- Font Awsome Icons -->
     <link rel="stylesheet" href="{% static 'home/styles/font-awesome.css' %}" />
     <!-- Bootstarp CSS -->
@@ -66,6 +71,10 @@
     {% block hero %} {% endblock hero %}
     <!-- !Hero Section End -->
 
+    <!-- !Features Section Start -->
+    {% block features %} {% endblock features %}
+    <!-- !Features Section End -->
+
     <!-- !JS Links Start -->
     <!-- jquery js -->
     <script src="{% static 'home/js/jquery.min.js' %}"></script>
@@ -73,6 +82,8 @@
     <script src="{% static 'home/js/popper.min.js' %}"></script>
     <!-- bootstrap js -->
     <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel js -->
+    <script src="{% static 'home/js/owl.carousel.min.js' %}"></script>
     <!-- jquery js -->
     <script src="{% static 'home/js/main.js' %}"></script>
     <!-- !JS Links End -->

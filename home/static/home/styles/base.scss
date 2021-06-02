@@ -100,6 +100,38 @@ ul {
   color: $color-3;
   animation: bounceTop_01 3s linear infinite;
 }
+.section-padding {
+  padding: 80px 0;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: $black-900;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+.section-title h2 span {
+  color: $main-color;
+}
+.owl-carousel .owl-dots {
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-carousel button.owl-dot {
+  height: 6px;
+  width: 24px;
+  background-color: #dddddd;
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+.owl-carousel button.owl-dot.active {
+  background-color: $main-color;
+}
 
 // !Navbar
 .navbar {
