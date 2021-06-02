@@ -8,12 +8,58 @@
     <title>Document</title>
     <!-- !Links Start -->
     <!-- Bootstarp CSS -->
-    <link rel="stylesheet" href="{% static 'home/styles/base.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'home/styles/bootstrap.min.css' %}"
+    />
     <!-- Main CSS -->
     <link rel="stylesheet" href="{% static 'home/styles/base.css' %}" />
     <!-- !Links End -->
   </head>
   <body>
+    <!-- !Navbar Start -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Central Shop</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Screenshots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- !Navbar End -->
+
     <!-- !JS Links Start -->
     <!-- jquery js -->
     <script src="{% static 'home/js/jquery.min.js' %}"></script>
