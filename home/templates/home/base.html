@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- !Links Start -->
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="{% static 'home/styles/font-awesome.css' %}" />
     <!-- Bootstarp CSS -->
     <link
       rel="stylesheet"
@@ -18,7 +20,7 @@
   </head>
   <body>
     <!-- !Navbar Start -->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md fixed-top">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="#">Central Shop</a>
@@ -59,6 +61,10 @@
       </div>
     </nav>
     <!-- !Navbar End -->
+
+    <!-- !Hero Section Start -->
+    {% block hero %} {% endblock hero %}
+    <!-- !Hero Section End -->
 
     <!-- !JS Links Start -->
     <!-- jquery js -->

@@ -1,0 +1,55 @@
+{% extends "home/base.html" %} {% load static %}
+<!-- !Hero Section Start -->
+{% block hero %}
+<link rel="stylesheet" href="{% static 'home/styles/home.css' %}" />
+<section class="home d-flex align-items-center">
+  <div class="effect-wrap">
+    <i class="fas fa-plus effect effect-1"></i>
+    <i class="fas fa-plus effect effect-2"></i>
+    <i class="fas fa-circle-notch effect effect-3"></i>
+  </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <div class="home-text">
+          <h1>Best E-Platform for your Online Shopping</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            labore voluptatem ad, quis nulla in.
+          </p>
+          <div class="home-btn">
+            <a href="#" class="btn btn-1">download app</a>
+            <button type="button" class="btn btn-1 video-play-btn">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <div class="home-img">
+          <div class="circle"></div>
+          <img src="{% static 'home/images/hero.jpg' %}" alt="Central Shop" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- !Video Popup Start -->
+<div class="video-popup">
+  <div class="video-popup-inner">
+    <div class="iframe-box">
+      <i class="fas fa-times video-popup-close"></i>
+      <iframe
+        id="player-1"
+        src="https://www.youtube.com/embed/wbMXVEvSczY"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+<!-- !Video Popup End -->
+
+{% endblock hero %} !Hero Section End
