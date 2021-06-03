@@ -258,4 +258,76 @@
   color: #555555;
   margin: 0 0 15px;
 }
+
+.fun-facts {
+  background-color: #f7f7f7;
+}
+
+.fun-facts .section-title {
+  margin-bottom: 20px;
+}
+
+.fun-facts .section-title h2 {
+  text-align: left;
+}
+
+.fun-facts-img img {
+  max-width: 250px;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  -webkit-animation: bounceTop_01 3s ease infinite;
+          animation: bounceTop_01 3s ease infinite;
+}
+
+.fun-facts-text p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  margin: 0 0 15px;
+  font-weight: 300;
+}
+
+.fun-fact-item {
+  padding: 40px 30px;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.fun-fact-item h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.fun-fact-item span {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  line-height: 26px;
+  display: block;
+  color: #ffffff;
+}
+
+.fun-fact-item.style-1 {
+  background-color: #e91e63;
+}
+
+.fun-fact-item.style-2 {
+  background-color: #f5ae10;
+}
+
+.fun-fact-item.style-3 {
+  background-color: #09d69c;
+}
+
+.fun-fact-item.style-4 {
+  background-color: #7857fe;
+}
 /*# sourceMappingURL=home.css.map */
