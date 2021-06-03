@@ -338,3 +338,48 @@
   font-weight: 300;
   line-height: 26px;
 }
+
+// !How It Works Section
+.how-it-works-item {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.how-it-works-item.line-right::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 50%;
+  top: 60px;
+  background-color: $main-color;
+  z-index: -1;
+}
+.how-it-works-item .step {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-color: $main-color;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+.how-it-works-item h3 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: $black-900;
+  text-transform: capitalize;
+}
+.how-it-works-item p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  color: $black-400;
+  line-height: 26px;
+}
