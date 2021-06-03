@@ -330,4 +330,15 @@
 .fun-fact-item.style-4 {
   background-color: #7857fe;
 }
+
+.screenshot-item {
+  margin: 15px;
+}
+
+.screenshot-item img {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: auto;
+}
 /*# sourceMappingURL=home.css.map */

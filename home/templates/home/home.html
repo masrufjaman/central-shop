@@ -106,7 +106,7 @@
 
 <!-- !Fun Facts Section Start -->
 {% block fun %}
-<section class="fun-facts">
+<section class="fun-facts section-padding">
   <div class="container">
     <div class="row">
       <div
@@ -164,3 +164,38 @@
 </section>
 {% endblock fun %}
 <!-- !Fun Facts Section End -->
+
+<!-- !App Screenshots Section Start -->
+{% block screenshots %}
+<section class="app-screenshots section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>app <span>screenshots</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="owl-carousel screenshots-carousel">
+        <div class="screenshot-item">
+          <img src="{% static 'home/images/hero.jpg' %}" alt="screentshot" />
+        </div>
+        <div class="screenshot-item">
+          <img src="{% static 'home/images/heroa.jpg' %}" alt="screentshot" />
+        </div>
+        <div class="screenshot-item">
+          <img src="{% static 'home/images/hero.jpg' %}" alt="screentshot" />
+        </div>
+        <div class="screenshot-item">
+          <img src="{% static 'home/images/heroa.jpg' %}" alt="screentshot" />
+        </div>
+        <div class="screenshot-item">
+          <img src="{% static 'home/images/hero.jpg' %}" alt="screentshot" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock screenshots %}
+<!-- !App Screenshots Section End -->
