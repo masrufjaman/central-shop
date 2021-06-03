@@ -44,6 +44,25 @@ ul {
   color: #ffffff;
   background-color: $main-color;
 }
+.btn-2 {
+  background-color: $main-color;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: $shadow-black-100;
+  font-weight: 500;
+}
+.btn-2:focus {
+  box-shadow: $shadow-black-100;
+}
+.btn-2:hover {
+  color: $main-color;
+  background-color: #ffffff;
+}
 @keyframes spin_01 {
   0% {
     transform: rotate(0deg);

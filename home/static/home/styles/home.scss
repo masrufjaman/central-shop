@@ -288,3 +288,53 @@
   display: block;
   margin: auto;
 }
+
+// !App Download Section
+.app-download {
+  background-image: url("/static/home/images/download.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.app-download .section-title h2 {
+  color: #ffffff;
+}
+.app-download::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: $main-to-dark-color;
+  opacity: 0.8;
+}
+.app-download-item {
+  background-color: $black-000;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: $shadow-black-100;
+}
+.app-download-item i {
+  font-size: 30px;
+  color: $main-color;
+  display: inline-block;
+}
+.app-download-item h3 {
+  font-size: 22px;
+  color: $black-900;
+  margin: 20px 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.app-download-item p {
+  font-size: 16px;
+  color: $black-400;
+  margin: 0 0 30px;
+  font-weight: 300;
+  line-height: 26px;
+}

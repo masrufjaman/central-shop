@@ -48,6 +48,31 @@ ul {
   background-color: #7857fe;
 }
 
+.btn-2 {
+  background-color: #7857fe;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.btn-2:focus {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-2:hover {
+  color: #7857fe;
+  background-color: #ffffff;
+}
+
 @-webkit-keyframes spin_01 {
   0% {
     -webkit-transform: rotate(0deg);
