@@ -449,3 +449,72 @@
   font-size: 16px;
   color: $color-2;
 }
+
+// !Pricing Section
+.pricing-plan {
+  box-shadow: $shadow-black-100;
+  border-radius: 10px;
+}
+.pricing-plan .pricing-header {
+  padding: 20px 30px;
+  border-bottom: 1px solid $black-alpha-100;
+}
+.pricing-plan .pricing-header h3 {
+  text-align: center;
+  font-size: 30px;
+  color: $black-900;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0;
+}
+.pricing-plan .pricing-price {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: center;
+  line-height: 0.7;
+}
+.pricing-plan .pricing-price .currency {
+  font-size: 16px;
+  font-weight: 300;
+  color: $black-400;
+  margin-right: 5px;
+  align-self: flex-start;
+}
+.pricing-plan .pricing-price .price {
+  font-size: 80px;
+  font-weight: 700;
+  color: $main-color;
+}
+.pricing-plan .pricing-price .period {
+  font-size: 14px;
+  font-weight: 300;
+  color: $black-400;
+  margin-right: 5px;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+.pricing-plan .pricing-body {
+  padding: 0 30px;
+}
+.pricing-plan .pricing-body ul li {
+  font-size: 16px;
+  font-weight: 300;
+  color: $black-400;
+  padding: 10px 0 10px 30px;
+  border-bottom: 1px solid $black-alpha-100;
+  line-height: 26px;
+  position: relative;
+}
+.pricing-plan .pricing-body ul li:last-child {
+  border-bottom: none;
+}
+.pricing-plan .pricing-body ul li i {
+  color: $main-color;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.pricing-plan .pricing-footer {
+  padding: 20px 30px 30px;
+  text-align: center;
+}
