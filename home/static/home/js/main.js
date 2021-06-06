@@ -83,7 +83,7 @@ $(document).ready(function () {
   $('.team-carousel').owlCarousel({
     loop: true,
     margin: 0,
-    autoplay: true,
+    // autoplay: true,
     responsiveClass: true,
     responsive: {
       0: {
@@ -93,7 +93,7 @@ $(document).ready(function () {
         items: 2,
       },
       1000: {
-        items: 3,
+        items: 2,
       },
     },
   });
