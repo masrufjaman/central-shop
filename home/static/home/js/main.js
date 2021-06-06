@@ -80,7 +80,7 @@ $(document).ready(function () {
   });
 
   // !Team Carousel
-  $(".team-carousel").owlCarousel({
+  $('.team-carousel').owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,
