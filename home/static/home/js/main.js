@@ -94,7 +94,12 @@ $(document).ready(function () {
       },
       1000: {
         items: 2,
-      },
-    },
+      }
+    }
+  });
+
+  // Page Scrolling - ScrollIt
+  $.scrollIt({
+    topOffset: -50
   });
 });

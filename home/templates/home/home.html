@@ -2,7 +2,7 @@
 <!-- !Hero Section Start -->
 {% block hero %}
 <link rel="stylesheet" href="{% static 'home/styles/home.css' %}" />
-<section class="home d-flex align-items-center">
+<section class="home d-flex align-items-center" id="home" data-scroll-index="0">
   <div class="effect-wrap">
     <i class="fas fa-plus effect effect-1"></i>
     <i class="fas fa-plus effect effect-2"></i>
@@ -19,7 +19,7 @@
             labore voluptatem ad, quis nulla in.
           </p>
           <div class="home-btn">
-            <a href="#" class="btn btn-1">download app</a>
+            <a href="#" data-scroll-goto="3" class="btn btn-1">download app</a>
             <button type="button" class="btn btn-1 video-play-btn">
               <i class="fas fa-play"></i>
             </button>
@@ -54,7 +54,7 @@
 
 <!-- !Features Section Start -->
 {% block features %}
-<section class="features section-padding">
+<section class="features section-padding" id="features" data-scroll-index="1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -165,7 +165,7 @@
 
 <!-- !App Screenshots Section Start -->
 {% block screenshots %}
-<section class="app-screenshots section-padding">
+<section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -197,7 +197,7 @@
 
 <!-- !App Download Section Start -->
 {% block download %}
-<section class="app-download section-padding">
+<section class="app-download section-padding" data-scroll-index="3">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -291,7 +291,7 @@
 
 <!-- !Testimonials Section Start -->
 {% block testimonials %}
-<section class="testimonials section-padding">
+<section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -387,7 +387,7 @@
 
 <!-- !Pricing Section Start -->
 {% block pricing %}
-<div class="pricing section-padding">
+<div class="pricing section-padding" id="pricing" data-scroll-index="5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -573,7 +573,7 @@
 
 <!-- !Contact Section Start -->
 {% block contact %}
-<section class="contact section-padding">
+<section class="contact section-padding" data-scroll-index="6">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
