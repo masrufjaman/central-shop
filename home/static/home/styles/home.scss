@@ -518,3 +518,28 @@
   padding: 20px 30px 30px;
   text-align: center;
 }
+
+// !Team Section
+.team {
+  background-color: $black-100;
+}
+.team-item {
+  margin: 15px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: $shadow-black-100;
+}
+.team-item h3 {
+  font-size: 18px;
+  color: $black-900;
+  font-weight: 500;
+  margin: 15px 0 5px;
+  text-transform: capitalize;
+}
+.team-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  color: $black-400;
+  text-transform: capitalize;
+}
