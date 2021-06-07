@@ -104,7 +104,43 @@ $(document).ready(function () {
   });
 
   // Navbar Collapse
-  $(".nav-link").on("click", function(){
+  $(".nav-link").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
+
+  // Toogle Theme Start - light and dark mode
+  function toggleTheme() {
+    if (localStorage.getItem("masruf-theme") !== null) {
+      if (localStorage.getItem("masruf-theme") === "dark") {
+        $("body").addClass("dark");
+      }
+      else{
+        $("body").removeClass("dark");
+      }
+    }
+    updateIcon();
+  }
+  toggleTheme();
+
+  $(".toogle-theme").on("click",function(){
+    $("body").toggleClas("dark");
+    if ($("body").hasClass("dark")){
+      localStorage.setItem("masruf-theme","dark");
+    }
+    else{
+      localStorage.setItem("masruf-theme","light");
+    }
+  });
+
+  function updateIcon() {
+    if ($("body").hasClass("dark")) {
+      $(".toogle-theme i").removeClass("fa-moon");
+      $(".toogle-theme i").addClass("fa-sun");
+    }
+    else {
+      $(".toogle-theme i").removeClass("fa-sun");
+      $(".toogle-theme i").addClass("fa-moon");
+    }
+  }
+
 });

@@ -8,6 +8,10 @@ body {
   line-height: 1.5;
 }
 
+body.dark {
+  background-color: #2b2c2f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -343,6 +347,27 @@ ul {
   font-weight: 300;
   margin: 50px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toggle-theme {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  background-color: #2b2c2f;
+  z-index: 1200;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  text-align: center;
+}
+
+.toggle-theme i {
+  line-height: 40px;
 }
 
 @media (max-width: 991px) {

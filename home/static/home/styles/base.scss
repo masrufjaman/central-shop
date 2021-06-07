@@ -13,6 +13,17 @@ body {
   background-color: #ffffff;
   line-height: 1.5;
 }
+body.dark {
+  background-color: $bg-dark;
+  $black-100: $bg-dark;
+  $black-000: $bg-dark;
+  $main-to-dark-color: $bg-dark;
+  $dark-to-main-color: $main-color;
+  $shadow-black-100: $shadow-black-300;
+  $black-alpha-100: rgba(255, 255, 255, 0.05);
+  $black-900: #ffffff;
+  $black-400: #bbbbbb;
+}
 * {
   margin: 0;
   padding: 0;
@@ -247,6 +258,27 @@ ul {
   margin: 50px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+// !Toogle Theme Start - light and dark mode
+.toggle-theme {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  background-color: $dark-to-main-color;
+  z-index: 1200;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: $shadow-black-300;
+  font-size: 16px;
+  text-align: center;
+}
+.toggle-theme i {
+  line-height: 40px;
+}
+
 // !Responsive
 @media (max-width: 991px) {
   .navbar-toggler {
@@ -311,7 +343,7 @@ ul {
   .section-title h2 {
     font-size: 35px;
   }
-  .fun-facts .section-title h2{
+  .fun-facts .section-title h2 {
     text-align: center;
   }
 }
