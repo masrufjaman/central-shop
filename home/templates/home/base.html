@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- !Links Start -->
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'home/styles/owl.carousel.min.css' %}"
+    />
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="{% static 'home/styles/font-awesome.css' %}" />
+    <!-- Bootstarp CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'home/styles/bootstrap.min.css' %}"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'home/styles/base.css' %}" />
+    <!-- !Links End -->
+  </head>
+  <body>
+    <!-- !Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Central Shop</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-scroll-nav="0"
+                href="{% url 'home-home' %}"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll-nav="1" href="#">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll-nav="2" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll-nav="4" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll-nav="5" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll-nav="6" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- !Navbar End -->
+
+    <!-- !Hero Section Start -->
+    {% block hero %} {% endblock hero %}
+    <!-- !Hero Section End -->
+
+    <!-- !Features Section Start -->
+    {% block features %} {% endblock features %}
+    <!-- !Features Section End -->
+
+    <!-- !Fun Facts Section Start -->
+    {% block fun %} {% endblock fun %}
+    <!-- !Fun Facts Section End -->
+
+    <!-- !App Screenshots Section Start -->
+    {% block screenshots %} {% endblock screenshots %}
+    <!-- !App Screenshots Section End -->
+
+    <!-- !App Download Section Start -->
+    {% block download %} {% endblock download %}
+    <!-- !App Download Section End -->
+
+    <!-- !How It Works Section Start -->
+    {% block howItWorks %} {% endblock howItWorks %}
+    <!-- !How It Works Section End -->
+
+    <!-- !Testimonials Section Start -->
+    {% block testimonials %} {% endblock testimonials %}
+    <!-- !Testimonials Section End -->
+
+    <!-- !Pricing Section Start -->
+    {% block pricing %} {% endblock pricing %}
+    <!-- !Pricing Section End -->
+
+    <!-- !Team Section Start -->
+    {% block team %} {% endblock team %}
+    <!-- !Team Section End -->
+
+    <!-- !Faq Section Start -->
+    {% block faq %} {% endblock faq %}
+    <!-- !Faq Section End -->
+
+    <!-- !Contact Section Start -->
+    {% block contact %} {% endblock contact %}
+    <!-- !Contact Section End -->
+
+    <!-- !Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Aboout us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">terms & condition</a></li>
+                <li><a href="">lates blogs</a></li>
+                <li><a href="">app services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Quick links</h3>
+              <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#features">shop by departments</a></li>
+                <li><a href="#screenshots">products gallery</a></li>
+                <li><a href="#pricing">membership plan</a></li>
+                <li><a href="#testimonials">testimonials</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Social pages</h3>
+              <ul>
+                <li><a href="">facebook</a></li>
+                <li><a href="">twitter</a></li>
+                <li><a href="">instagram</a></li>
+                <li><a href="">linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="copyright-text">&copy;2021 @ IT R</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- !Footer End -->
+
+    <!-- !Toogle Theme Start - light and dark mode -->
+    <div class="toggle-theme">
+      <i class="fas"></i>
+    </div>
+    <!-- !Toogle Theme End - light and dark mode -->
+
+    <!-- !JS Links Start -->
+    <!-- jquery js -->
+    <script src="{% static 'home/js/jquery.min.js' %}"></script>
+    <!-- popper js -->
+    <script src="{% static 'home/js/popper.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel js -->
+    <script src="{% static 'home/js/owl.carousel.min.js' %}"></script>
+    <!-- ScrollIt js -->
+    <script src="{% static 'home/js/scrollIt.min.js' %}"></script>
+    <!-- jquery js -->
+    <script src="{% static 'home/js/main.js' %}"></script>
+    <!-- !JS Links End -->
+  </body>
+</html>
