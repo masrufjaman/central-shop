@@ -9,3 +9,11 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url
