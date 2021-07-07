@@ -24,7 +24,8 @@ function updateUserOrder(productId, action) {
     fetch(url, {
         method: 'POST',
         headers:{
-            'Content-Type':'application/json'
+            'Content-Type':'application/json',
+            'X-CSRFToken':csrftoken,
         },
         body:JSON.stringify({'productId': productId, 'action': action})
     })
@@ -34,6 +35,6 @@ function updateUserOrder(productId, action) {
     })
     
     .then((data) =>{
-        console.log('data:', data)
+        console.log('data', data)
     })
 }
